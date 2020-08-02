@@ -5,12 +5,13 @@ This will collect reports from Duplicati, write them to a SQL database, then sho
 To setup duplicati to send these reports:
 open duplicati, settings, default options, and add these options:
 
+```
 --send-http-url=http://duplicati.example.com
 --send-http-any-operation=true
 --send-http-message-parameter-name=message
 --send-http-level=all
 --send-http-message=Duplicati %OPERATIONNAME% report for %backup-name%   %PARSEDRESULT%   %RESULT%
-
+```
 (Replace "duplicati.example.com" with the hostname or IP number of your web server.)
 
 On your SQL server, execute database.sql
