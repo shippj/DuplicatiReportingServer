@@ -1,6 +1,8 @@
 # Duplicati Reporting Server
 
-This will collect reports from Duplicati, write them to a SQL database, then show you which backups have quit working.
+## This will collect reports from Duplicati, write them to a SQL database, then show you which backups have quit working.
+
+## Setup Instructions:
 
 To setup duplicati to send these reports:
 open duplicati, settings, default options, and add these options:
@@ -16,7 +18,7 @@ open duplicati, settings, default options, and add these options:
 
 On your SQL server, execute database.sql
 
-On your web server, create a new site and put all the files from this project in the sites folder.
+On your web server, create a new site and put all the files from this project (excluding screenshots) in the sites folder.
 
 Modify the _settings.inc file as needed if your sql server isn't running on the same machine as your web server
 
@@ -27,3 +29,7 @@ http://duplicati.example.com/summary.asp
 
 enjoy!
 
+# SCREENSHOTS
+![Screenshot1](/screenshots/image002.png)
+![Screenshot2](/screenshots/image003.png)
+![Screenshot3](/screenshots/image004.png)
